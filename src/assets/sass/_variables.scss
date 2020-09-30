@@ -3,5 +3,37 @@ $softDark: #242526;
 $light: #fdfdfd;
 $link: #348dea;
 $orange: #fc6a57;
+$greySoft: #f2f2f2;
 $textTitle: #707070;
 $text: #ACACAC;
+
+$fontList: "DMSans-Bold.ttf", "DMSans-BoldItalic.ttf", "DMSans-Italic.ttf", "DMSans-Medium.ttf", "DMSans-MediumItalic.ttf", "DMSans-Regular.ttf";
+
+@function split-str($string, $separator) {
+  $index: str-index($string,  $separator);
+  @if $index { 
+    $str-1: str-slice($string, 1, $index - 1);
+    $str-2: str-slice($string, $index + 1);
+    @return $str-1 $str-2;
+  } @else {
+    @return $string;
+  }
+}
+
+@each $font in $fontList {
+  $family: split-str($font, "-");
+  $family: nth($family, 2);
+  $family: split-str($family, ".");
+  $family: nth($family, 1);
+  // $family: str-replace($family, 'SemiBold', 'SemiBold');
+  @font-face {
+    font-family: #{$family};
+    src: url('../fonts/#{$font}') format('truetype');
+  }
+  .#{$family} {
+    font-family: #{$family};
+  }
+  .\!#{$family} {
+    font-family: #{$family} !important;
+  }
+}

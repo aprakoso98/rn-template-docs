@@ -1,0 +1,6 @@
+Run this docs using NodeJS serve
+
+if you have not install it before, install using this command "npm install -g server"
+and then open your terminal in docs folder, do this command "serve ."
+
+you can simplify it with "npm install -g server && serve ."
