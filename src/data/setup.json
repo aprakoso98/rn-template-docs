@@ -1,0 +1,21 @@
+{
+    "folder": {
+        "src folder": {
+            "assets": "In assets folder, you will all of the images are kept on the basis of the specific page.",
+            "data": "In data folder, you will find all of the data uses in this template.",
+            "components": [
+                "components folder is most importantly use, you will find all the components used in this template.",
+                [
+                    "common -> Components in common folder are context providers and other handy reusable items.",
+                    "elements -> We have written these core components to make the developer's life much easier.",
+                    "routes -> Here all routing related components like a Tab Navigator and Stack Navigators for each tab page are includded.",
+                    "screens -> Here is all the screens we used in our template like Login, Home, Place Detail, Dish Detail, Checkout, Settings etc."
+                ]
+            ],
+            "context": "All the context related components like Auth Context, Cart Context and Theme Context will be here",
+            "custom-hooks": "Inside this folder are all the handy reusable custom hooks",
+            "styles": "Here all theme styling related functions are includded",
+            "utils": "Inside this folder are all the util functions like number formatter and google map's custom theme styles"
+        }
+    }
+}

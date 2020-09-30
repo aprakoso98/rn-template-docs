@@ -1,0 +1,43 @@
+div:focus {
+	outline: 0 solid transparent;
+}
+#app {
+	* {
+		color: $text;
+	}
+	#side-menu {
+		background-color: $softDark;
+		padding: 3rem 0;
+		transition: 1s;
+		a {
+			color: $light;
+			padding: .5rem 2rem;
+			&.active {
+				background-color: $orange;
+			}
+		}
+		.logo {
+			font-size: 3.5rem;
+			padding: 0 20px 50px;
+			color: $light;
+			label {
+				color: $orange;
+			}
+		}
+	}
+  #content {
+		background-color: $light;
+    padding: 0 3rem;
+    overflow-y: auto;
+    & div {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  b, strong {
+    font-weight: bold;
+  }
+  a {
+    color: $link;
+  }
+}
